@@ -1,0 +1,31 @@
+body
+{
+    background-color :aliceblue;
+    margin-top: 1px;
+    margin-right: 40px;
+    margin-bottom: 0;
+    margin-left: 2px;
+    background-image: url(bgimg7.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    }
+li{
+    display: inline-flex;
+    border-radius: 40%;
+}
+div
+{
+    
+    background-position: left center;
+}
+
+li a {
+    border: 1px solid white;
+    display:block;
+    color:darkblue;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 40%;
+  }
