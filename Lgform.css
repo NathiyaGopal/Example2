@@ -5,7 +5,7 @@
  {
     padding: 16px;
     text-align:left;
-    margin-top: 2%;
+    margin-top: 20px;
     margin-left: 60%;
     margin-right: 150px;
     margin-bottom: 0;
@@ -22,7 +22,8 @@ height: 60%;
 a
 {
 color:blue;
-padding: left 10px;
+padding-left: 50px;
+
 }
 a:hover
 {
@@ -40,11 +41,11 @@ label {
   input{
     text-align:left;
     height: 24px;
-    width: 90%;   
+    width: 100%;   
     padding-left: 10px;
     background:white;
-    margin-left: 26px;
-    margin-right: 14px;
+    margin-left: 12px;
+    margin-right: 18px;
   }
   .btn {
     /*float: center;*/
@@ -54,10 +55,10 @@ label {
     padding: 12px 20px;
     font-size:16px;
     background-color:skyblue;
-    margin-left: 10%;
-    margin-right: 20%; 
+    margin-left: 10px;
+    margin-right: 100px; 
     margin-top: 30px;   
-    width:32%;
+    width:30%;
     height: auto;
   }
   .footer

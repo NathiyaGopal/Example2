@@ -23,7 +23,7 @@ div.p
   background-color: rgb(72, 109, 230);
   margin-top: auto;
   margin-right: 60px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-left: 120px;
   
 }
@@ -31,6 +31,8 @@ h4{
   color:brown;
   font-size: 25px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
   #in_sub
   {
@@ -69,7 +71,7 @@ label {
     height: 24px;
     width: 96%;   
     padding-left: 10px;
-    background:lightgoldenrodyellow;
+    background:white;
     margin-left: 30px;
     margin-right: 10px;
   }
@@ -77,7 +79,7 @@ label {
   {
     background-color: skyblue;
     margin-left:auto;
-    width: 20px;
+    width: 16px;
   }
 .btnCancel, .btnSubmit {
     /*float: center;*/
