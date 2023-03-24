@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Registration form</title>
+        <title>KSV Registration form</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="formstyle.css">
+        
         <style>
         .button {
             background-color:darkblue;
@@ -17,17 +20,26 @@
             cursor: pointer;
             width: 80px;
             height: auto;
-            border-radius: 30%;
+            border-radius: 10%;
           }
           button:hover
           {
                 opacity:1;
           }
+    .footer
+    {
+        width: 100%;
+        position: fixed;
+        text-align: center;        
+        background-color:dodgerblue;
+        color: white;
+        left: auto;
+        bottom:0;
+    }
         </style>
      <h4> <u>Create an account </u></h4>
     </head>
     <body>
-    <br>
     <form>
     <div class="container">
         <p>Please fill in this form to create an account.</p>
@@ -42,9 +54,15 @@
         <label>
             <input type="checkbox" checked="checked" name="remember" id="sub_input"> Remember me
           </label>
-        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-        <p> <input type="button"  class="button" name="btnSubmit" value="submit"></p>
-    </div>
+        <!--<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
+        <p> <input type="button"  class="button" name="btnSubmit" value="submit">
+        <a href="HomePage.html">go back</a> </p>
+    </div>    
 </form>
+<footer>
+  <p class="footer">
+  copy rights received @ 2023
+  </p>
+</footer>
 </body>
 </html>

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+  }
+.container
+ {
+    padding: 16px;
+    text-align:left;
+    margin-top: 2%;
+    margin-left: 60%;
+    margin-right: 150px;
+    margin-bottom: 0;
+    background-color:lightblue;
+    border: 1px solid white;
+  } 
+.subcontainer
+{
+border: 1px solid white;
+padding: 16px;
+color:brown;
+height: 60%;
+}
+a
+{
+color:blue;
+padding: left 10px;
+}
+a:hover
+{
+color:darkred;
+}
+label {
+    padding: 4px 2px 2px 0;
+    display: inline-block;
+    font-family: cursive;
+  }
+  hr{
+    border: 1px solid burlywood;
+    margin-bottom: 4px;
+  }
+  input{
+    text-align:left;
+    height: 24px;
+    width: 90%;   
+    padding-left: 10px;
+    background:white;
+    margin-left: 26px;
+    margin-right: 14px;
+  }
+  .btn {
+    /*float: center;*/
+    color: darkred;
+    margin: 1px 1px;
+    text-align:center;
+    padding: 12px 20px;
+    font-size:16px;
+    background-color:skyblue;
+    margin-left: 10%;
+    margin-right: 20%; 
+    margin-top: 30px;   
+    width:32%;
+    height: auto;
+  }
+  .footer
+    {
+        width: 100%;
+        position: fixed;
+        text-align: center;        
+        background-color:dodgerblue;
+        color: white;
+        left: auto;
+        bottom:0;
+    }
+
+    @media screen and (max-width: 600px) {
+        .btnCancel, .btnSubmit {
+          width: 12%;
+        }
+      }

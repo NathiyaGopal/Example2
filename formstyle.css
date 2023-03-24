@@ -3,12 +3,13 @@
   }
 body
 {
-
+  margin-top: 1px;
+  margin-bottom: 0;
   background-color:aliceblue;
 }
 div
 {
-    height:600px;
+    height: 530px;
     width: 40%;
     background-color:lightskyblue;
     text-align: center;
@@ -19,16 +20,16 @@ div.p
   width: 40%; 
   text-align:center;
   font-size:10px;
-  background-color: blue;
+  background-color: rgb(72, 109, 230);
   margin-top: auto;
   margin-right: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-left: 120px;
   
 }
 h4{
   color:brown;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
   #in_sub
@@ -46,10 +47,10 @@ h4{
  {
     padding: 16px;
     text-align:left;
-    margin-top: auto;
+    margin-top: 0;
     margin-left: 400px;
     margin-right: 200px;
-    margin-bottom: 0;
+    margin-bottom: 100px;
     background-color:skyblue;
   } 
 
@@ -59,8 +60,9 @@ label {
    font-family: cursive;
   }
   hr{
-    border: 1px solid lightseagreen;
+    border: 1px solid lightslategrey;
     margin-bottom: 4px;
+    width:100%;
   }
   input{
     text-align:left;
@@ -83,11 +85,20 @@ label {
     text-align:center;
     padding: 10px 12px;
     font-size:12px;
-    background-color:rgb(20, 218, 20);
+    background-color:aliceblue;
   }
-
+  a
+  {
+  color:blue;
+  padding-left: 100px;
+  font-size: 18px;
+  }
+  a:hover
+  {
+    color:darkred;
+  }
 @media screen and (max-width: 600px) {
     .btnCancel, .btnSubmit {
-      width: 8%;
+      width: 12%;
     }
   }
