@@ -9,7 +9,7 @@ body
 }
 div
 {
-    height: 530px;
+    height: 500px;
     width: 40%;
     background-color:lightskyblue;
     text-align: center;
@@ -27,12 +27,12 @@ div.p
   margin-left: 120px;
   
 }
-h4{
+h3{
   color:brown;
-  font-size: 25px;
+  /*font-size: 20px;*/
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 12px;
+  margin-top: 2px;
+  padding: top 0;
 }
   #in_sub
   {
@@ -54,16 +54,21 @@ h4{
     margin-right: 200px;
     margin-bottom: 100px;
     background-color:skyblue;
-  } 
-
+  }
+.lblerror
+{
+ text-align: left; 
+ color: darkorange;
+ font-size: 14px;
+}
 label {
-    padding: 4px 4px 4px 0;
+    padding: 2px 4px 4px 0;
     display: inline-block;
    font-family: cursive;
   }
   hr{
     border: 1px solid lightslategrey;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     width:100%;
   }
   input{
@@ -99,7 +104,8 @@ label {
   {
     color:darkred;
   }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px)
+ {
     .btnCancel, .btnSubmit {
       width: 12%;
     }

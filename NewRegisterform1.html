@@ -38,54 +38,66 @@
         text-align: center;        
         background-color:dodgerblue;
         color: white;
-        left: auto;
+        left: 1px;
+        right: 1px;
         bottom:0;
     }
     .kanavu
     {
       color:white;
-      text-align: center;
+      text-align: justify;
       text-decoration: double;
       background-color:brown;
-      width: 160px;
-      height: 60px;
-      padding-top: 8px;
-      padding-bottom: 10px;
+      width: 100%;
+      height: 50px;
+      padding-top: 6px;
+      padding-bottom: 6px;
       padding-left: 10px;
       padding-right: 10px;
-      font-size: 24px;
-      margin-top: 10px;
+      font-size: 18px;
+      margin-top: 6px;
       margin-bottom: 0;
     }
 
         </style>
         <header style="border: 1px;display: block;">
             <p class="kanavu">
-                <b><u>KANAVU</u><br>School</b>
+                <b><u>KANAVU</u><br>School of English</b>
             </p>
         </header>
-     <h4> <u>Create an account </u></h4>
+     
+     <script language="javascript">
+      /*let txtemail,txtpswd;*/
+      let contactlength;
+      function isValidContactNo()
+      {
+       let txtcontactno = document.getElementsByName("txtmob").value;
+       contactlength = txtcontactno;
+       document.getElementById("lblResult").innerHTML=(contactlength != 10) ? "please check your ContactNo.":"ok";
+      }
+    </script>
     </head>
-    
     <body>
-
+      <p class="lblerror"><label id="lblResult">er</label></p>
+      <h3> <u>Create an account </u></h3>
     <form>
     <div class="container">
         <p>Please fill in this form to create an account.</p>
         <hr>
-        <label>Fist Name :</label> <input type="text"><br>
-        <label>Last Name :</label> <input type="text"> <br> 
+        <label>Fist Name :</label> <input type="text" name="txtfirst"><br>
+        <label>Last Name :</label> <input type="text" name="txtlast"> <br> 
         <!--<label>Date Of Birth </label> <input type="text" id="in_sub"><input type="text" id="in_sub"><input type="text" id="in_sub"><br>-->
-        <label>Contact No : </label> <input type="text" maxlength="10"><br>
+        <label>Contact No : </label> <input type="text" id="mobno" name="txtmob"><br>
         <label>Email - id :</label> <input type="email"><br>
         <label>New Password : </label><input type="password"><br>
-        <label>Re-Password : </label> <input type="password" name="cnfmpswd"><br><br> <hr>
+        <label>Re-Password : </label> <input type="password" name="cnfmpswd"><br><hr>
         <label>
             <input type="checkbox" checked="checked" name="remember" id="sub_input"> Remember me
           </label>
         <!--<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
-        <p> <input type="button"  class="button" name="btnSubmit" value="submit">
+        <p> <input type="button"  class="button" name="btnSubmit" value="submit" onclick="isValidContactNo()">
         <a href="HomePage.html" id="goback">go back</a> </p>
+        
     </div>    
 </form>
 <footer>
