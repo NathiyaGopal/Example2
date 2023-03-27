@@ -40,6 +40,7 @@
         color: white;
         left: 1px;
         right: 1px;
+        
         bottom:0;
     }
     .kanavu
@@ -71,26 +72,46 @@
             <p class="kanavu">
                 <b><u>KANAVU</u><br>School of English</b>
             </p>
-        </header>
-     
+        </header>     
      <script type ="text/javascript">
-      function ValidateEmail(inputText)
-        {
+    function ValidateEmail()
+    {
+      let inputText = document.registerform.txtemail;
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-          if(inputText.value.match(mailformat))
-            {
-              alert("Valid email address!");
-              document.form1.text1.focus();
+        var pswdlength = document.registerform.newpswd;
+          if(document.registerform.txtfirst.value=="")
+          {
+            alert("You must enter firstname");
+          }
+          else if(!inputText.value.match(mailformat))
+          {
+              /*alert("Valid email address!");*/
+              alert("You have entered an invalid email address!");
+              document.form1.txtemail.focus();
               return true;
-            }
-            else
-            {
+          }
+          else if( pswdlength.value.length < 8)
+          {
+              alert("Your password length is too low.");
+              document.form1.newpswd.focus();
+              return true;
+          }
+          else if(document.registerform.newpswd.value != document.registerform.repswd.value)
+          {
+            alert("You have entered mismatch password");
+            document.form1.newpswd.focus();
+            return true;
+            
+          }
+          else
+          {
             alert("You have entered an invalid email address!");
-            document.form1.text1.focus();
+            document.form1.txtfirst.focus();
             return false;
-            }
-            }
-      </script>
+          }
+    }
+    
+    </script>
     </head>
     <body>
       <!--<p class="lblerror"><label id="lblResult">.</label>
@@ -99,26 +120,26 @@
     <form name="registerform" action="#">
     <div class="container">
         <p>Please fill in this form to create an account.</p>
-        <hr>
+        
         <label>Fist Name :</label> <input type="text" name="txtfirst"><br>
-        <label>Last Name :</label> <input type="text" name="txtlast"> <br> 
+        <label>Last Name :</label> <input type="text" class="input-field" name="txtlast"> <br> 
         <!--<label>Date Of Birth </label> <input type="text" id="in_sub"><input type="text" id="in_sub"><input type="text" id="in_sub"><br>-->
         <label>Contact No : </label> <input type="text" id="mobno" name="txtmob" maxlength="10" minlength="10"><br>
         <label>Email - id :</label> <input type="email" name="txtemail"><br>
-        <label>New Password : </label><input type="password"><br>
-        <label>Re-Password : </label> <input type="password" name="cnfmpswd"><br><hr>
+        <label>New Password :</label><input type="password" name="newpswd" maxlength="14" minlength="8"><br>
+        <label>Re-Password : </label> <input type="password" name="repswd" minlength="8" maxlength="14"><br><hr>
         <label>
             <input type="checkbox" checked="checked" name="remember" id="sub_input"> Remember me
           </label>
         <!--<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
-        <p> <input type="button"  class="button" name="btnSubmit" value="submit" onclick="ValidateEmail(document.registerform.txtemail)">
+        <p> <input type="button"  class="button" name="btnSubmit" value="submit" onclick="ValidateEmail()">
         <a href="HomePage.html" id="goback">go back</a> </p>
         
     </div>    
 </form>
 <footer>
   <p class="footer">
-  copy rights received @ 2023
+  copy rights @ 2023
   </p>
 </footer>
 </body>

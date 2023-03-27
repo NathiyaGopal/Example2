@@ -45,7 +45,9 @@
       margin-left: 18px;
     }
         </style>
-
+    <scrip type="text/javascript">
+        
+    </script>
     </head>
     <body>
         <header style="border: 1px;display: block;">
@@ -53,18 +55,19 @@
                 <b><u>KANAVU</u><br>School of English</b>
             </p>
     </header>
+   
     <br>
     <p class ="lgin"><u>Login to <b>KANAVU SCHOOL</b></u></p>
-        <form>
+        <form name="loginform">
         <div class="container">
             <p>Login in your account</p>
             <hr>
             <p class ="subcontainer">
-            <label>Email - id :</label> <input type="email"><br>
+            <label>Email - id :</label> <input type="email" name="txtuserid"><br>
             
-            <label>Password : </label><input type="password"><br>
+            <label>Password : </label><input type="password" maxlength=14 minlength=8><br>
             
-             <input type="button" class="btn" name="btnSubmit" value="Login">
+             <input type="button" class="btn" name="btnSubmit" value="Login" onclick="">
             <a href="HomePage.html">go back</a>
             </p>
             <p>New to Kanavu?<a href="NewRegisterform1.html">create an account</a>
