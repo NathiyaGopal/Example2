@@ -74,6 +74,7 @@
             </p>
         </header>     
      <script type ="text/javascript">
+      
     function ValidateEmail()
     {
       let inputText = document.registerform.txtemail;
@@ -100,14 +101,13 @@
           {
             alert("You have entered mismatch password");
             document.form1.newpswd.focus();
-            return true;
-            
+            return true;            
           }
           else
           {
-            alert("You have entered an invalid email address!");
-            document.form1.txtfirst.focus();
-            return false;
+            alert("You have entered successfuly.!");
+            
+            return true;
           }
     }
     

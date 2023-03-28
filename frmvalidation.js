@@ -1,4 +1,4 @@
-function ValidateEmail(inputText)
+function ValidateEmail1(inputText)
 {
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 if(inputText.value.match(mailformat))
@@ -23,3 +23,35 @@ function isvalidPsswd(inputpswd1,inputpswd2)
         return true;
     }
 }
+function ValidateEmail()
+    {
+      let inputText = document.loginform.txtuserid;
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var pswdlength = document.loginform.txtlgpswd;
+          if(document.loginform.txtuserid.value=="")
+          {
+            alert("Please insert valid id.");
+          }
+          else if(!inputText.value.match(mailformat))
+          {
+              /*alert("Valid email address!");*/
+              alert("You have entered an invalid email address!");
+             /*document.loginform.lblerrormsg.value="You have entered an invalid email address!";*/
+              document.loginform.txtuserid.focus();
+              return true;
+          }
+          else if( pswdlength.value.length < 8)
+          {
+              alert("Your password length is too low.");
+              document.loginform.txtlgpswd.focus();
+              return true;
+          }
+          
+          else
+          {
+            alert("You have entered successfully.!");
+            
+            return true;
+          }
+    }
+    

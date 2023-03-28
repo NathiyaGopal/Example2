@@ -45,7 +45,7 @@
       margin-left: 18px;
     }
         </style>
-    <scrip type="text/javascript">
+    <script src="frmvalidation.js">
         
     </script>
     </head>
@@ -54,20 +54,20 @@
             <p class="kanavu">
                 <b><u>KANAVU</u><br>School of English</b>
             </p>
-    </header>
-   
+    </header>   
     <br>
     <p class ="lgin"><u>Login to <b>KANAVU SCHOOL</b></u></p>
         <form name="loginform">
         <div class="container">
+            <label name="lblerrormsg" value="">.</label>
             <p>Login in your account</p>
             <hr>
             <p class ="subcontainer">
             <label>Email - id :</label> <input type="email" name="txtuserid"><br>
             
-            <label>Password : </label><input type="password" maxlength=14 minlength=8><br>
+            <label>Password : </label><input type="password" name="txtlgpswd" maxlength=14 minlength=8><br>
             
-             <input type="button" class="btn" name="btnSubmit" value="Login" onclick="">
+             <input type="button" class="btn" name="btnSubmit" value="Login" onclick="ValidateEmail(document.loginform.txtuserid)">
             <a href="HomePage.html">go back</a>
             </p>
             <p>New to Kanavu?<a href="NewRegisterform1.html">create an account</a>
