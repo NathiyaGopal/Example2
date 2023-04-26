@@ -14,7 +14,7 @@
   } 
 .subcontainer
 {
-border: 1px solid white;
+/*border: 1px solid white;*/
 padding: 16px;
 color:brown;
 height: 60%;
@@ -46,20 +46,22 @@ label {
     background:white;
     margin-left: 12px;
     margin-right: 18px;
+    border-bottom: 1px;
   }
   .btn {
     /*float: center;*/
+    border:none;
     color: darkred;
     margin: 1px 1px;
     text-align:center;
     padding: 12px 20px;
     font-size:16px;
-    background-color:skyblue;
+    background-color:darkgray;
     margin-left: 10px;
     margin-right: 100px; 
     margin-top: 30px;   
     width:30%;
-    height: auto;
+    height: auto;    
   }
   .footer
     {

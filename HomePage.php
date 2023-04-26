@@ -25,7 +25,8 @@
 }
 
 /* Change color on hover */
-.header a:hover {
+.header a:hover 
+{
   background-color:white;
   
 }
@@ -59,9 +60,9 @@
       color:white;
       text-align: justify;
       text-decoration: double;
-      background-color:brown;
+      background-color:grey;
       width: 100%;
-      height: 48px;
+      height: 50px;
       padding-top: 4px;
       padding-bottom: 4px; 
       padding-left: 10px;
@@ -80,19 +81,20 @@
         <header class="header">
           <ul>
           <b>
-            <li><a href="HomePage.html">Home</a></li>
-            <li><a href="NewRegisterform1.html">New_Register</a></li>
-            <li><a href="Login.html">Login</a></li>
-            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="HomePage.php">Home</a></li>
+            <li><a href="NewRegisterform1.php">New_Register</a></li>
+            <li><a href="Login.php">Login</a></li>
+            <li><a href="aboutus.php">About us</a></li>
           </b>
         </ul>
         <p class="kanavu">
-          <b><u>KANAVU</u><br> School of English</b>
+          <!---<b><u>KANAVU</u><br> School of English</b>-->
+          <b><u>KOOVI</u><br>Digital</b>
         </p>
         </header>
         
-        <div class="mask1"><p> Welcome <br>to <p style="color:chocolate;"><b>KANAVU SCHOOL</b></p></p>
-        <p class="clickhere">Not yet an account? you may join us... <a href="NewRegisterform1.html">Click here to Register</a></p>
+        <div class="mask1"><p> Welcome <br>to <p style="color:chocolate;"><b>KOOVI Digital</b></p></p>
+        <p class="clickhere">Not yet an account? you may join us... <a href="NewRegisterform1.php">Click here to Register</a></p>
         </div>
         <footer>
             <p class="footer">

@@ -28,7 +28,7 @@ p
     margin-bottom: 2px;
 }
 li a {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     display:block;
     color:darkorange;
     text-align: center;
