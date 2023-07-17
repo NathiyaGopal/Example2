@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+  }
+ 
+
+a
+{
+color:blue;
+padding-left: 50px;
+
+}
+a:hover
+{
+color:darkred;
+}
+label {
+    padding: 4px 2px 2px 0;
+    display: inline-block;
+    font-family: cursive;
+  }
+   
+    @media screen and (max-width: 600px) {
+        btn {
+          width: 12%;
+        }
+      }

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>KSV Home Page</title>
+      <title>Koovi Home Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
-}
+  }
 
 /* Style the top navigation bar */
-.topnav {
+.topnav
+{
   overflow: hidden;
   background-color:lightskyblue
 }
@@ -36,23 +37,59 @@
     float: none;
     width: 100%;
   }
-}   .header
+}  
+body
+{
+    background-color :wheat;
+    margin-top: 1px;
+    margin-right: 2px;
+    margin-bottom: 0;
+    margin-left: 2px;
+    background-image:none;
+    background-repeat: no-repeat;
+    background-size:cover;
+    }
+header {
+background-color: grey;
+position: fixed;
+left: 0;
+right: 0;
+top: 5px;
+height: 30px;
+display: flex;
+align-items: center;
+box-shadow: 0 0 25px 0 black;
+}
+header * {
+display: inline;
+}
+header li {
+margin: 20px;
+}
+header li a {
+color: blue;
+text-decoration: none;
+}
+/*
+.header
     {
         width: 100%;
         margin-top: 0;
         font-size: 14px;
         text-align: right;
         margin-bottom: 0;
-    }
+    }*/
     .footer
     {
         width: 100%;
-        position: fixed;
+        position: relative;
         text-align: center;        
         background-color:dodgerblue;
         color: white;
-        left: auto;
+        left: 0;
+        right: -10px;
         bottom:0;
+        margin-top:350px;
     }
     .kanavu
     {
@@ -78,19 +115,21 @@
         <link rel="stylesheet" href="hmpg.css">
     </head>
     <body>
-        <header class="header">
-          <ul>
+        <header>
+          <nav>
+          <ul>            
           <b>
+          <li><u>KOOVI</u><br>Digital</li>
             <li><a href="HomePage.php">Home</a></li>
             <li><a href="NewRegisterform1.php">New_Register</a></li>
             <li><a href="Login.php">Login</a></li>
             <li><a href="aboutus.php">About us</a></li>
           </b>
-        </ul>
-        <p class="kanavu">
+        </ul></nav>
+        <!--<p class="kanavu">
           <!---<b><u>KANAVU</u><br> School of English</b>-->
-          <b><u>KOOVI</u><br>Digital</b>
-        </p>
+          <!--<b><u>KOOVI</u><br>Digital</b>
+        </p>-->
         </header>
         
         <div class="mask1"><p> Welcome <br>to <p style="color:chocolate;"><b>KOOVI Digital</b></p></p>

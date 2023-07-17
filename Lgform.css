@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
   }
+ 
 .container
  {
     padding: 16px;
@@ -8,8 +9,8 @@
     margin-top: 20px;
     margin-left: 60%;
     margin-right: 150px;
-    margin-bottom: 0;
-    background-color:lightblue;
+    margin-bottom: 300px;
+    /*background-color:aliceblue;*/
     border: 1px solid white;
   } 
 .subcontainer
@@ -17,8 +18,10 @@
 /*border: 1px solid white;*/
 padding: 16px;
 color:brown;
-height: 60%;
+height: 20%;
+background-color:aliceblue;
 }
+/*
 a
 {
 color:blue;
@@ -28,12 +31,13 @@ padding-left: 50px;
 a:hover
 {
 color:darkred;
-}
+}*/
 label {
     padding: 4px 2px 2px 0;
     display: inline-block;
     font-family: cursive;
   }
+  /*
   hr{
     border: 1px solid burlywood;
     margin-bottom: 4px;
@@ -47,7 +51,7 @@ label {
     margin-left: 12px;
     margin-right: 18px;
     border-bottom: 1px;
-  }
+  }*/
   .btn {
     /*float: center;*/
     border:none;
@@ -63,19 +67,30 @@ label {
     width:30%;
     height: auto;    
   }
+  /*
   .footer
     {
+      /*
         width: 100%;
+        height:50%;
         position: fixed;
         text-align: center;        
-        background-color:dodgerblue;
+        background-color:black;
         color: white;
-        left: auto;
+        left: auto;//
+        
+        width: 100%;
+        position: relative;
+        text-align: center;        
+        background-color:grey;
+        color: white;
+        left: 1px;
+        right: 1px;        
         bottom:0;
-    }
+    }*/
 
     @media screen and (max-width: 600px) {
-        .btnCancel, .btnSubmit {
+        btn {
           width: 12%;
         }
       }

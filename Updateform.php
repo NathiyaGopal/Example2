@@ -236,7 +236,7 @@
         <label>Last Name :</label> <input type="text" class="input-field" name="txtlast" id="txtlast" value="<?php echo $tln; ?>"> <br> 
         <!--<label>Date Of Birth </label> <input type="text" id="in_sub"><input type="text" id="in_sub"><input type="text" id="in_sub"><br>-->
         <label>Contact No : </label> <input type="text" name="txtmob" id="txtmob" maxlength="10" minlength="10"  value= "<?php echo $ctno; ?>"  require><br>
-        <label>Email - id :</label> <input type="email" name="txtemail" id="txtemail" value= "<?php echo $eml; ?>" ><br>
+        <label>Email - id :</label> <input type="email" name="txtemail" id="txtemail" value= "<?php echo $eml; ?>" readonly><br>
         <label>New Password :</label><input type="password" name="newpswd" maxlength="14" minlength="8"  id="newpswd"><br>
         <label>Re-Password : </label> <input type="password" name="repswd" minlength="8" maxlength="14" id="repswd"><br><hr>
         <label>
